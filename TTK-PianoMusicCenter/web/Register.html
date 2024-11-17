@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css"/>
+    </head>
+    <body>
+        <style>
+            .register button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.reset button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+        </style>
+        <div class="container-register">
+            <h1>Create new Account</h1>
+            <form action="MainController" class="form-register">
+                <label for="username">Username:</label>
+                <input type="text" name="txtUsername" value="" id="username"><h1>(from 6 to 20 chars)</h1><br>
+                <label for="password">Password:</label>
+                <input type="text" name="txtPassword" value="" id="password"><h1>(from 8 to 20 chars)</h1><br>
+                <label for="confirm">ConfirmPassword:</label>
+                <input type="text" name="txtConfirm" value="" id="confirm"><h1>(the same password)</h1><br>
+                <label for="fullname">Fullname:</label>
+                <input type="text" name="txtFullname" value="" id="fullname"><h1>(from 2 to 40 chars)</h1><br>
+
+                <div class="submit" style="display: flex;justify-content: space-around;">
+
+                            <div class="register"><button type="submit" value="Register" name="btAction" style="background-color: #FA6A69;
+                                      width: 150px;
+                                      
+                                border-radius: 10px;
+                                height: 50px;
+                                border: none;
+                                font-family: Poppins;
+                                box-shadow: 0 10px 20px #FA6A6999;
+                                margin-bottom: 40px;
+                                transition: 0.5s;
+                                color: #fff;
+                                font-size: 14px;
+                                cursor: pointer;
+    ">Register</button></div>
+                                <div class="reset"><button type="submit" value="Reset" name="btAction" style="background-color: #FA6A69;
+                                width: 150px;
+                                border-radius: 10px;
+                                height: 50px;
+                                border: none;
+                                font-family: Poppins;
+                                box-shadow: 0 10px 20px #FA6A6999;
+                                margin-bottom: 40px;
+                                transition: 0.5s;
+                                color: #fff;
+                                cursor: pointer;
+                                font-size: 14px;
+                                ">Reset</button></div>  
+                    </div>
+        </form>
+        </div>
+    </body>
+</html>
